@@ -13,25 +13,31 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-title: MM
-email:
+title: Sign Errors
+email: ltsten-public@outlook.com
 description: >- # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
-twitter_username: username
-github_username: username
-minimal_mistakes_skin: default
+  Posts about bits of mathematics, programming, or other topics I find interesting.
+subtitle: >-
+  "There must be a sign error in an odd number of places" - Dirac
+#twitter_username: username
+github_username: ltsten
+minimal_mistakes_skin: air
 search: true
 
 # Build settings
 markdown: kramdown
 remote_theme: mmistakes/minimal-mistakes
+repository: "ltsten/ltsten.github.io"
 # Outputting
 permalink: /:categories/:title/
 paginate: 5 # amount of posts to show
 paginate_path: /page:num/
-timezone: # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
+timezone: Europe/London # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
+locale: en-GB
+url: "https://ltsten.github.io"
+
+head_scripts:
+  - https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML
 
 include:
   - _pages
@@ -57,35 +63,37 @@ plugins:
   - jemoji
   - jekyll-include-cache
 
+logo: "/assets/images/-1.png"
+
 author:
-  name   : "First Lastname"
-  avatar : "/assets/images/bio-photo.jpg"
-  bio    : "My awesome biography constrained to a sentence or two goes here."
+  name   : "Matt Rowe"
+  avatar : "/assets/images/bio.png"
+  bio    : "Academically mathematical, professionally programmatical."
   links:
-    - label: "Website"
-      icon: "fas fa-fw fa-link"
-      url: "https://"
-    - label: "Twitter"
-      icon: "fab fa-fw fa-twitter-square"
-      url: "https://twitter.com/"
+    #- label: "Website"
+    #  icon: "fas fa-fw fa-link"
+    #  url: "https://"
+    #- label: "Twitter"
+    #  icon: "fab fa-fw fa-twitter-square"
+    #  url: "https://twitter.com/"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
-      url: "https://github.com/"
-    - label: "Instagram"
-      icon: "fab fa-fw fa-instagram"
-      url: "https://instagram.com/"
+      url: "https://github.com/LtSten"
+    #- label: "Instagram"
+    #  icon: "fab fa-fw fa-instagram"
+    #  url: "https://instagram.com/"
 
 footer:
   links:
-    - label: "Twitter"
-      icon: "fab fa-fw fa-twitter-square"
-      url: "https://twitter.com/"
+    #- label: "Twitter"
+    #  icon: "fab fa-fw fa-twitter-square"
+    #  url: "https://twitter.com/"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
-      url: "https://github.com/"
-    - label: "Instagram"
-      icon: "fab fa-fw fa-instagram"
-      url: "https://instagram.com/"
+      url: "https://github.com/LtSten"
+    #- label: "Instagram"
+    #  icon: "fab fa-fw fa-instagram"
+    #  url: "https://instagram.com/"
 
 defaults:
   # _posts
@@ -94,11 +102,16 @@ defaults:
       type: posts
     values:
       layout: single
+      classes: wide
       author_profile: true
-      read_time: true
+      #read_time: true
+      show_date: true
       comments: true
       share: true
       related: true
+      toc: true
+      header:
+        image: /assets/images/header.png
   # _pages
   - scope:
       path: "_pages"
