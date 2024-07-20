@@ -26,6 +26,20 @@
     font-style: normal;
 }
 
+// Corollary
+.corollary
+{
+    display: block;
+    margin: 12px 0;
+    font-style: italic;
+}
+.corollary:before
+{
+    content: "Corollary ";
+    font-weight: bold;
+    font-style: normal;
+}
+
 // Proof
 .proof
 {
@@ -39,6 +53,18 @@
     font-style: italic;
 }
 .proof:after
+{
+    content: "\25FB";
+    float:right;
+}
+
+.proofend
+{
+    display: block;
+    margin: 12px 0;
+    font-style: normal;
+}
+.proofend:after
 {
     content: "\25FB";
     float:right;

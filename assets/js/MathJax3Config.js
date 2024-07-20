@@ -55,6 +55,7 @@ MathJax = {
 				norm		: ['\\lVert', '\\rVert', '#1', 1, '', ''],
 				normsub		: ['\\lVert', '\\rVert', '#1', 2, '', '_{#2}'],
 				floor		: ['\\lfloor', '\\rfloor', '#1', 1, '', ''],
+				ceil		: ['\\lceil', '\\rceil', '#1', 1, '', ''],
 				innerp		: ['\\langle', '\\rangle', '#1,#2', 2, '', ''],
 				innerpsub	: ['\\langle', '\\rangle', '#1,#2', 3, '', '_{#3}'],
 				set			: ['\\lbrace', '\\rbrace', '#1', 1, '', '']
